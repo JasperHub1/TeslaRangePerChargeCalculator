@@ -1,0 +1,135 @@
+  .teslaControls {
+    display: flex;
+    justify-content: center;
+  }
+
+  .teslaControl {
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+      
+    &__item {
+      font-size: 2.2rem;
+      line-height: 2.5rem;
+      font-weight: 400;
+      width: 20rem;
+      height: 6.5rem;
+      padding: 0 4rem;
+      border: 1px solid #ccc;
+      margin: 0 .8rem 0 0;
+      background-color: #f7f7f7;
+    }
+
+    &__title {
+      letter-spacing: 2px;
+      font-size: 1.6rem;
+      margin: 0 0 1rem 0;
+    }
+
+    &__airCondition {
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: block;
+      width: 10rem;
+      height: 10rem;
+      border: .6rem solid #f7f7f7;
+      border-radius: 50%;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+      color: #666;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: .6s all;
+
+      &--cool {
+        i {
+          background-image: url(/images/climate/ac-off.svg);
+        }
+      }
+
+      &--heat {
+        i {
+          background-image: url(/images/climate/heat-off.svg);
+        }
+      }
+
+      &--heat.teslaControl__airCondition--active {
+        background: #d64800;
+        background: linear-gradient(to bottom, #d64800 0%, #d20200 100%);
+
+        i {
+          background-image: url(/images/climate/heat-on.svg);
+        }
+      }
+
+      i {
+        display: block;
+        width: 2.2rem;
+        height: 2.2rem;
+        margin: .8rem auto 0;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      input {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+    }
+
+    &__airCondition--active {
+      color: #fff;
+      background: #33a0ff;
+      background: linear-gradient(to bottom, #33a0ff 0%, #388bff 100%);
+
+      i {
+        background-image: url(/images/climate/ac-on.svg);
+      }
+    }
+
+    &__wheels {
+
+      &__container {
+        display: flex;
+      }
+
+      &__wheel {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #333;
+        cursor: pointer;
+        width: 20rem;
+        height: 6.5rem;
+        border: 1px solid #ccc;
+        display: inline-block;
+        padding: 2rem 0 0 9rem;
+        margin: 0 8px 0 0;
+        background-color: #f7f7f7;
+        background-position: 24.21053% 9px;
+        background-repeat: no-repeat;
+        background-size: 4.4rem;
+        
+
+        &--19Wheel {
+          background-image: url(/images/wheels/19.svg);
+        }
+
+        &--21Wheel {
+          background-image: url(/images/wheels/21.svg);
+        }
+
+        &--active {
+          border-color: #39f;
+          box-shadow: inset 0px 0px 0px 1px #39f;
+        }
+      }
+    }
+  }

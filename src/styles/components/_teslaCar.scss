@@ -1,0 +1,100 @@
+  .teslaCar {
+    width: 100%;
+    min-height: 35rem;
+    background: #fff url(/images/tesla.jpg) no-repeat top center;
+    background-size: contain;
+  }
+
+  .teslaWheels {
+    height: 24.7rem;
+    width: 55.5rem;
+    position: relative;
+    margin: 0 auto;
+
+    .teslaWheel {
+      height: 8rem;
+      width: 8rem;
+      bottom: 0;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+
+      &--front {
+        left: 5.3rem;
+      }
+
+      &--rear {
+        right: 7.2rem;
+      }
+
+      &--19--45 {
+        background-image: url(/images/wheel-19.png);
+        animation: infinite-spinning 230ms steps(6) infinite;
+      }
+
+      &--19--50 {
+        background-image: url(/images/wheel-19.png);
+        animation: infinite-spinning 200ms steps(6) infinite;
+      }
+
+      &--19--55 {
+        background-image: url(/images/wheel-19.png);
+        animation: infinite-spinning 170ms steps(6) infinite;
+      }
+
+      &--19--60 {
+        background-image: url(/images/wheel-19.png);
+        animation: infinite-spinning 140ms steps(6) infinite;
+      }
+
+      &--19--65 {
+        background-image: url(/images/wheel-19.png);
+        animation: infinite-spinning 110ms steps(6) infinite;
+      }
+
+      &--19--70 {
+        background-image: url(/images/wheel-19.png);
+        animation: infinite-spinning 80ms steps(6) infinite;
+      }
+
+      &--21--45 {
+        background-image: url(/images/wheel-21.png);
+        animation: infinite-spinning 480ms steps(12) infinite;
+      }
+
+      &--21--50 {
+        background-image: url(/images/wheel-21.png);
+        animation: infinite-spinning 400ms steps(12) infinite;
+      }
+
+      &--21--55 {
+        background-image: url(/images/wheel-21.png);
+        animation: infinite-spinning 320ms steps(12) infinite;
+      }
+
+      &--21--60 {
+        background-image: url(/images/wheel-21.png);
+        animation: infinite-spinning 240ms steps(12) infinite;
+      }
+
+      &--21--65 {
+        background-image: url(/images/wheel-21.png);
+        animation: infinite-spinning 160ms steps(12) infinite;
+      }
+
+      &--21--70 {
+        background-image: url(/images/wheel-21.png);
+        animation: infinite-spinning 80ms steps(12) infinite;
+      }
+
+      @keyframes infinite-spinning {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }

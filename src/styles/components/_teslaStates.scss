@@ -1,0 +1,59 @@
+  .teslaStates {
+    margin: -7rem 0 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .teslaState {
+    width: 13rem;
+
+    &__icon {
+      height: 2rem;
+      background-size: auto 1.3rem;
+      background-position: top right;
+      background-repeat: no-repeat;
+
+      &--60 {
+        background-image: url(/images/models/60.svg);
+      }
+
+      &--60d {
+        background-image: url(/images/models/60d.svg);
+      }
+
+      &--75 {
+        background-image: url(/images/models/75.svg);
+      }
+
+      &--75d {
+        background-image: url(/images/models/75d.svg);
+      }
+
+      &--90d {
+        background-image: url(/images/models/90d.svg);
+      }
+
+      &--p100d {
+        background-image: url(/images/models/p100d.svg);
+      }
+    }
+
+    p {
+      font-size: 4rem;
+      font-weight: normal;
+      display: block;
+      padding: 0 18px 0 0;
+      position: relative;
+      color: #008dff;
+      text-align: right;
+
+      &::after {
+        font-size: 1.4rem;
+        font-weight: normal;
+        content: 'MI';
+        position: absolute;
+        top: .8rem;
+        right: 0;
+      }
+    }
+  }

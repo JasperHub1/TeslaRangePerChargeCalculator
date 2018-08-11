@@ -1,0 +1,64 @@
+// COLOR VARIABLES
+$color-primary: #e0a922;
+$color-primary-dark: #b88d20;
+$color-secondary: #48c9cb;
+
+$color-white: #fff;
+$color-black: #292e30;
+$color-green: #8dd58c;
+
+$color-grey-light: rgb(214, 214, 214);
+$color-grey-light-1: rgb(155, 155, 155);
+$color-grey-light-2: rgb(112, 112, 112);
+$color-grey-light-3: rgb(68, 68, 68);
+$color-grey-light-4: rgb(29, 29, 29);
+
+// FONT VARIABLES
+@font-face {
+  font-family: 'Roboto-Regular-webfont';
+  src: url('/fonts/Roboto-Regular-webfont.eot'); /* IE9 Compat Modes */
+  src: local('Roboto-Regular-webfont'),
+       url('/fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/Roboto-Regular-webfont.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/Roboto-Regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/Roboto-Regular-webfont.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+$Proxima-Nova-Light: "Proxima Nova Light", arial narrow, arial condensed,
+  helvetica condensed, arial, helvetica, sans-serif;
+$Bebas-Neue: "Bebas Neue", arial narrow, arial condensed, helvetica condensed,
+  arial, helvetica, sans-serif;
+$Playfair-Display-Regular: "Playfair Display Regular", arial narrow,
+  arial condensed, helvetica condensed, arial, helvetica, sans-serif;
+
+// SHADOW VARIABLES
+$shadow-primary: 0 2rem 5rem rgba($color-primary, 0.8);
+$shadow-primary-light: 0 2rem 5rem rgba($color-primary, 0.3);
+
+$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+$shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+// RESPONSIVE BREAKPOINTS
+// large
+$bp-1650: 103.125em; //  1650px
+$bp-1500: 93.75em; //  1500px
+$bp-1400: 87.5em; //  1400px
+$bp-1300: 81.25em; //  1300px
+$bp-1200: 75em; //  1200px
+$bp-1000: 62.5em; //  1000px
+// medium
+$bp-900: 50em; //  900px
+$bp-800: 50em; //  800px
+$bp-700: 43.75em; //  700px
+// small
+$bp-600: 37.5em; //  600px
+$bp-500: 31.25em; //  500px
+$bp-400: 25em; //  400px
+$bp-350: 21.875em; //  350px
+
+// Spacing
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+$desktop-breakpoint: 45rem;
