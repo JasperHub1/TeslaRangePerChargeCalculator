@@ -45,13 +45,13 @@
 
       &--cool {
         i {
-          background-image: url(/images/climate/ac-off.svg);
+          background-image: url(/images/airCon/ac-off.svg);
         }
       }
 
       &--heat {
         i {
-          background-image: url(/images/climate/heat-off.svg);
+          background-image: url(/images/airCon/heat-off.svg);
         }
       }
 
@@ -60,7 +60,7 @@
         background: linear-gradient(to bottom, #d64800 0%, #d20200 100%);
 
         i {
-          background-image: url(/images/climate/heat-on.svg);
+          background-image: url(/images/airCon/heat-on.svg);
         }
       }
 
@@ -91,7 +91,7 @@
       background: linear-gradient(to bottom, #33a0ff 0%, #388bff 100%);
 
       i {
-        background-image: url(/images/climate/ac-on.svg);
+        background-image: url(/images/airCon/ac-on.svg);
       }
     }
 

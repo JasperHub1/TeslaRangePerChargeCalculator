@@ -22,7 +22,6 @@ const TeslaControls = props => {
       </div>
     )
   )
-
   
   return (
     <React.Fragment>

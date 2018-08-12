@@ -1,0 +1,65 @@
+.teslaControls {
+  margin-top: 3rem;
+}
+
+.teslaControl {
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__value {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    position: relative;
+  }
+
+  &__unit {
+    position: absolute;
+    top: -12%;
+    left: 3.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &__ArrowUpDown {
+    position: absolute;
+    right: 1rem;
+    top: .7rem;
+  }
+
+  &__btnUp,
+  &__btnDown {
+    outline: 0;
+    width: 3rem;
+    color: #008dff;
+    cursor: pointer;
+    display: block;
+    padding: 1.1rem 0;
+    vertical-align: middle;
+    border: 0;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+
+  &__btnUp:disabled,
+  &__btnDown:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  }
+
+  &__btnUp {
+    border-bottom: 1px solid #fff;
+    background-image: url(/images/up.svg);
+  }
+
+  &__btnDown {
+    border-top: 1px solid #ccc;
+    background-image: url(/images/down.svg);
+  }
+}
